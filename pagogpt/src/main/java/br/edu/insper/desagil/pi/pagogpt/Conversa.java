@@ -1,10 +1,9 @@
 package br.edu.insper.desagil.pi.pagogpt;
 
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
-public class Conversa{
+public class Conversa {
 
     /* Atributos: */
     private Usuario usuario;
@@ -16,39 +15,33 @@ public class Conversa{
     }
 
     /* Construtor: */
-    public Conversa(Usuario usuario){
+    public Conversa(Usuario usuario) {
         this.usuario = usuario;
         this.prompts = new ArrayList<>(); /* inicializada como vazia*/
 
     }
 
     /* Metodo adiciona: */
-    public void adiciona (Prompt prompt){
+    public void adiciona(Prompt prompt) {
         this.prompts.add(prompt);
     }
 
     /* Metodo calcula subtotal: */
-    public double calculaSubTotal(){
+    public double calculaSubTotal() {
         double soma = 0.0;
-        for (Prompt prompt: prompts){
+        for (Prompt prompt : prompts) {
             soma += prompt.calculaPreco();
         }
         return soma;
     }
 
     /* Metodo calcula submedia: */
-    public double calculaSubMedia(){
-        if (prompts.isEmpty()){
+    public double calculaSubMedia() {
+        if (prompts.isEmpty()) {
             throw new IllegalStateException("Nenhum prompt!");
-        }
-
-        else {
+        } else {
             /* media: */
-            return calculaSubTotal()/prompts.size();
+            return calculaSubTotal() / prompts.size();
         }
     }
-
-=======
-public class Conversa {
->>>>>>> 45f8905823eb5abae567abe3ac5e9f2bf8291b34
 }

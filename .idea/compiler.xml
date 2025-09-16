@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="desagil-pi-pagogpt" />
-        <module name="desagil-pi-autumn" />
-        <module name="desagil-pi-cobasi" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="desagil-pi-autumn" target="17" />
+      <module name="desagil-pi-cobasi" target="17" />
+      <module name="desagil-pi-pagogpt" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

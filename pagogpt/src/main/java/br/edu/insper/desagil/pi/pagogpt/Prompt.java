@@ -1,6 +1,5 @@
 package br.edu.insper.desagil.pi.pagogpt;
 
-<<<<<<< HEAD
 public abstract class Prompt {
 
     /* Atributos:*/
@@ -29,8 +28,3 @@ public abstract class Prompt {
 
     /* Metodo abstrato pra ser usado por outras subclasses: */
     public abstract double calculaPreco();
-
-=======
-public class Prompt {
->>>>>>> 45f8905823eb5abae567abe3ac5e9f2bf8291b34
-}
