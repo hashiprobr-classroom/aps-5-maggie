@@ -1,5 +1,6 @@
 package br.edu.insper.desagil.pi.pagogpt;
 
+<<<<<<< HEAD
 import java.util.List;
 
 public class Cobrador {
@@ -26,4 +27,7 @@ public class Cobrador {
         return soma;
 
     }
+=======
+public class Cobrador {
+>>>>>>> 45f8905823eb5abae567abe3ac5e9f2bf8291b34
 }
