@@ -21,10 +21,11 @@ public abstract class Prompt {
     }
 
     /* Construção: */
-    public Prompt(String pergunta){
-        this.pergunta = this.pergunta;
+    public Prompt(String pergunta) {
+        this.pergunta = pergunta;
         this.resposta = null;
     }
 
     /* Metodo abstrato pra ser usado por outras subclasses: */
     public abstract double calculaPreco();
+}
