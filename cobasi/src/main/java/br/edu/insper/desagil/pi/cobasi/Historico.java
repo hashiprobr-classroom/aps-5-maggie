@@ -42,6 +42,7 @@ public class Historico {
         return summary;
     }
 
+
     public String resumo() {
         String summary = "Animal:" + nome + "\n";
         if (tipo == 0) {
