@@ -1,6 +1,6 @@
 package br.edu.insper.desagil.pi.pagogpt;
 
-public class Prompt {
+public abstract class Prompt {
 
     /* Atributos:*/
     private String pergunta;
@@ -21,14 +21,12 @@ public class Prompt {
     }
 
     /* Construção: */
-    public Prompt(){
-        this.pergunta = pergunta;
+    public Prompt(String pergunta){
+        this.pergunta = this.pergunta;
         this.resposta = null;
     }
 
-    /* Metodo:*/
-    /*@Override*/
-    public double calculaPreco(){
-        return 0.0;
-    }
+    /* Metodo abstrato pra ser usado por outras subclasses: */
+    public abstract double calculaPreco();
+
 }

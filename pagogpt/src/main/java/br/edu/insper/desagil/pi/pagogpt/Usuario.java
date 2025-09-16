@@ -6,13 +6,18 @@ public class Usuario {
     private String email;
     private String nome;
 
-    /* email e nome pode ser lido: */
+    /* email pode ser lido: */
     public String getEmail() {
         return email;
     }
 
+    /* Nome pode ser lido e escrito:*/
     public String getNome(){
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     /* Construção:*/
@@ -21,5 +26,4 @@ public class Usuario {
         this.nome = nome;
     }
 
-/* teste */
 }
